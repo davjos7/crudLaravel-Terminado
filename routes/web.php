@@ -11,6 +11,7 @@ use App\Http\Controllers\PerfilController;
 use App\Http\Controllers\AlbunesController;
 use App\Http\Controllers\DniController;
 use App\Http\Controllers\EventoController;
+use App\Http\Controllers\ProductosController;
 
 use App\Http\Controllers\ConsultaDniController;
 
@@ -19,14 +20,7 @@ Route::post('/consulta-dni', [ConsultaDniController::class, 'consultarDni']);
 
 Route::resource('alumnos', AlumnosController::class);
 
-
-
-
 Route::resource('evento', EventoController::class);
-
-
-
-
 
 
 Route::get('/', function () {
@@ -54,6 +48,9 @@ Route::resource('perfil', PerfilController::class);
 
 //RUTAS DE CONTROLADOR ALBUNES
 Route::resource('albunes', AlbunesController::class);
+
+//RUTAS DE CONTROLADOR PRODUCTOS
+Route::resource('productos', ProductosController::class);
 
 
 
